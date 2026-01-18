@@ -7,8 +7,9 @@ export const fetchRandomQuote = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        "https://zenquotes.io/api/random"
-      );
+"https://corsproxy.io/?https://zenquotes.io/api/random"
+);
+
 
       return {
         text: response.data[0].q,

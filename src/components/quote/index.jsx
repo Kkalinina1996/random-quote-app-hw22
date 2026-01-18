@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchRandomQuote } from "../features/quote/quoteSlice";
-import styles from "./Quote.module.css";
+import  { fetchRandomQuote } from '../../redux/slices/quoteSlice'
+import styles from "./quote.module.css";
 
 const Quote = () => {
   const dispatch = useDispatch();
