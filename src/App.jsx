@@ -1,14 +1,15 @@
+import React from "react";
+import Quote from './components/quote';
 
-import './App.css'
-
-function App() {
-  
-
+const App = () => {
   return (
-    <>
-      
-    </>
-  )
-}
+    <div>
+      <h1 style={{ textAlign: "center" }}>
+        Random Quote Generator
+      </h1>
+      <Quote />
+    </div>
+  );
+};
 
-export default App
+export default App;
